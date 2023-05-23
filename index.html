@@ -10,6 +10,58 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section></section>
+    <section>
+      <h1 id="form-header">Create your Personal Profile</h1>
+      <form aria-labelledby="form-header" aria-describedby="form-description">
+        <p id="form-description">
+          We want to get to know you! Please enter your personal information.
+        </p>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div>
+            <label for="first-name">First Name:</label><br />
+            <input id="first-name" type="text" name="first-name" required />
+          </div>
+          <div>
+            <label for="last-name">Last Name:</label><br />
+            <input id="last-name" type="text" name="last-name" required />
+          </div>
+          <div>
+            <label for="birthday">Your Birthday:</label><br />
+            <input id="birthday" type="date" name="birthday" required />
+          </div>
+        </fieldset>
+        <p>
+          Can you tell us a little bit mre? We want to annoy you with unwanted
+          ads.
+        </p>
+        <fieldset>
+          <legend>Further Information</legend>
+          <div>
+            <label for="fav-color">Favourite Color:</label><br />
+            <input
+              id="fav-color"
+              type="color"
+              value="#ff0000"
+              name="fav-color"
+              required
+            />
+          </div>
+          <div>
+            <label for="fav-pet">Your Birthday:</label><br />
+            <select id="fav-pet" name="fav-pet">
+              <option value="1">Dog</option>
+              <option value="2">Cat</option>
+              <option value="3">Rabbit</option>
+              <option value="4">Snake</option>
+              <option value="5">Lion</option>
+            </select>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
   </body>
 </html>

@@ -18,18 +18,12 @@
         </p>
         <fieldset>
           <legend>Personal Information</legend>
-          <div>
-            <label for="first-name">First Name:</label><br />
-            <input id="first-name" type="text" name="first-name" required />
-          </div>
-          <div>
-            <label for="last-name">Last Name:</label><br />
-            <input id="last-name" type="text" name="last-name" required />
-          </div>
-          <div>
-            <label for="birthday">Your Birthday:</label><br />
-            <input id="birthday" type="date" name="birthday" required />
-          </div>
+          <label for="first-name">First Name:</label>
+          <input id="first-name" type="text" name="first-name" required />
+          <label for="last-name">Last Name:</label>
+          <input id="last-name" type="text" name="last-name" required />
+          <label for="birthday">Your Birthday:</label>
+          <input id="birthday" type="date" name="birthday" required />
         </fieldset>
         <p>
           Can you tell us a little bit mre? We want to annoy you with unwanted
@@ -37,29 +31,26 @@
         </p>
         <fieldset>
           <legend>Further Information</legend>
-          <div>
-            <label for="fav-color">Favourite Color:</label><br />
-            <input
-              id="fav-color"
-              type="color"
-              value="#ff0000"
-              name="fav-color"
-              required
-            />
-          </div>
-          <div>
-            <label for="fav-pet">Your Birthday:</label><br />
-            <select id="fav-pet" name="fav-pet">
-              <option value="1">Dog</option>
-              <option value="2">Cat</option>
-              <option value="3">Rabbit</option>
-              <option value="4">Snake</option>
-              <option value="5">Lion</option>
-            </select>
-          </div>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
+          <label for="fav-color">Favourite Color:</label>
+          <input
+            id="fav-color"
+            type="color"
+            value="#ff0000"
+            name="fav-color"
+            required
+          />
+          <label for="fav-pet">What's your favourite pet?</label>
+          <select id="fav-pet" name="fav-pet">
+            <option value="" disabled selected>
+              --Please choose an option--
+            </option>
+            <option value="1">Dog</option>
+            <option value="2">Cat</option>
+            <option value="3">Rabbit</option>
+            <option value="4">Snake</option>
+            <option value="5">Lion</option>
+          </select>
+          <button type="submit">Submit</button>
         </fieldset>
       </form>
     </section>
